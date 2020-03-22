@@ -117,7 +117,12 @@ export default function() {
       orient: 'top',
       anchor: 'middle',
       offset: 4,
-      subtitlePadding: 3
+      subtitlePadding: 3,
+      ariaRoleDescription: 'title'
+    },
+
+    subtitle: {
+      ariaRoleDescription: 'subtitle'
     },
 
     // defaults for axes
@@ -142,7 +147,9 @@ export default function() {
       tickRound: true,
       tickSize: 5,
       tickWidth: 1,
-      titlePadding: 4
+      titlePadding: 4,
+      ariaRole: 'graphics-object',
+      ariaRoleDescription: 'axis'
     },
 
     // correction for centering bias
@@ -189,7 +196,9 @@ export default function() {
         direction: 'horizontal',
         left:   { direction: 'vertical' },
         right:  { direction: 'vertical' }
-      }
+      },
+      ariaRole: 'graphics-object',
+      ariaRoleDescription: 'legend'
     },
 
     // defaults for scale ranges
